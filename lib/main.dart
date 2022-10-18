@@ -7,10 +7,12 @@ void main() {
         "Hi, Flutter.\n今天是20220926",
         style: TextStyle(fontSize: 30,color: Colors.red,decoration: TextDecoration.underline),
       );
-  var img = Image.network("https://memeprod.sgp1.digitaloceanspaces.com/user-wtf/1653404116696.jpg");
-  var appBody=Center(
-
-    child: img,
+  var appBody=Container(
+      child:hiFlutter,
+      alignment: Alignment.topRight,
+      margin: EdgeInsets.all(50),
+      color: Colors.white,
+      padding: EdgeInsets.fromLTRB(30, 30, 30, 30),
   );
 
   var appBar = AppBar(
