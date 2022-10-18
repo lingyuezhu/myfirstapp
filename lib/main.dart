@@ -4,8 +4,8 @@ void main() {
 
   var appTitle = Text('我的第一個Flutter App'),
       hiFlutter =Text(
-        'Hi, Flutter.',
-        style: TextStyle(fontSize: 50),
+        "Hi, Flutter.",
+        style: TextStyle(fontSize: 30),
       );
 
   var appBody=Center(
@@ -14,12 +14,14 @@ void main() {
 
   var appBar = AppBar(
     title: appTitle,
+    backgroundColor: Color(0xff0000ff)
   );
 
   var app = MaterialApp(
     home: Scaffold(
       appBar: appBar,
       body: appBody,
+      backgroundColor: Colors.yellow
     ),
   );
 
